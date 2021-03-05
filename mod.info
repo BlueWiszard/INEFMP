@@ -1,0 +1,21 @@
+; This is a template mod descriptor file
+; See README.txt for details
+; Comments start with ';'
+{mod
+	; name of your mod
+	{name "INEF mod"}
+	
+	; mod tags
+	;{tags "list of tags"}
+
+	; description of your mod
+	{desc ""}
+
+	; oldest game version your mod is still compatible with (when in doubt, enter the latest version you tested)
+	{minGameVersion "1.234.0"}
+	; latest game version your mod has been tested on and is compatible with (can only be few versions(10) ahead of current game version)
+	{maxGameVersion "1.510.0"}
+	
+	; You can specify dependencies in "require" blocks. 
+	;{require ""}
+}

@@ -1,0 +1,29 @@
+{breed
+	{skin "ger_t5_2"}
+	{portrait "ger_t5"}
+	{nationality ltu}
+	{icon "squad23"}
+	{icon_priority 4}
+	{field_icon "ger_t5"}
+	{armors
+		
+	}
+	{perks
+		(include "perks_heroes.inc")
+		("perk_heavy_assault")
+	}
+	{veterancy
+		(include "veterancy_generic.inc")
+		("veterancy_1")
+	}
+	{inventory
+		{item "g36ka4_v2" filled}
+		{item "rgw90_v1" filled}
+		{item "pistol_v3c" filled}
+		{item "grenade dm51" 3}
+		{item "grenade anm8" 1}
+		{item "knife_v1c" 1}
+		{item "bandage" 3}
+		{in_hands 0}
+	}
+}

@@ -1,0 +1,36 @@
+;//	SCAR standard + holographic sight + hand grip + flash light
+
+{from "pattern bullet"
+	{tag "shell7 smg assaultrifle weapon bullet to_hand shoot_walking shoot_walking_ai"}
+	{entity "fn_scar_hg"}
+	{fireSound	"small_arms/scar/"}
+	{fireSoundClose	"small_arms/scar_close/"}
+	{reloadSound "small_arms/m16/"}
+	
+	{filling "ammo 7x51" 20 450}
+	{inventory
+		{size 6 2 }
+		{link_bone "gun_back"}
+		{weight 100 }
+	}
+	{mass 3.29}			;kg unloaded
+	{traceFreq 0}
+	{Automatic}
+
+	{rechargeTime 3.0}
+	("recoveryTime" r(625))
+ 	("speed" s(714))
+	("burst_assault")
+	("spreading_high_boost")
+	("accuracy_assault_boost")
+;	("accuracy_boost")
+	("recoil_medium_boost")
+	("sway_medium")
+	
+	("health_damage_7x51" d(714))
+	{projectileDamageTable {50 8} {250 0}}
+
+	{range 115 120}
+	
+	("zoom_acog")
+}

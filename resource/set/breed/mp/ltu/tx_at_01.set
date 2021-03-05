@@ -1,0 +1,32 @@
+{breed
+	{skin "ger_t2_1"}
+	{portrait "ger_t2"}
+	{nationality ltu}
+	{icon "squad9"}
+	{icon_priority 3}
+	{armors
+		
+	}
+	{perks
+		(include "perks_generic.inc")
+		("perk_t2")
+		{"rocketlauncher" lvl_3
+		}
+	}
+	{veterancy
+		(include "veterancy_generic.inc")
+		("veterancy_1")
+	}
+	{inventory
+		{item "g36a2_v1" filled}
+		{item "panzerfaust_v1" filled}
+		{item "panzerfaust_v1" filled}
+		{item "panzerfaust_v1" filled}
+		{item "panzerfaust_v1" filled}
+		{item "panzerfaust_v1" filled}
+		{item "grenade dm51" 2}
+		{item "grenade anm8" 1}
+		{item "bandage" 5}
+		{in_hands 0}
+	}
+}

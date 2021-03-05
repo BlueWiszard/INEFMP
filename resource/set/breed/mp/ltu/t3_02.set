@@ -1,0 +1,27 @@
+{breed
+	{skin "ger_t3_2"}
+	{portrait "ger_t3"}
+	{nationality ltu}
+	{icon "squad4"}
+	{icon_priority 3}
+	{armors
+		
+	}
+	{perks
+		(include "perks_generic.inc")
+		("perk_t3")
+	}
+	{veterancy
+		(include "veterancy_generic.inc")
+		("veterancy_1")
+	}
+	{inventory
+		{item "g36a2_v2" filled}
+		{item "pistol_v2c" filled}
+		{item "grenade dm51" 2}
+		{item "grenade anm8" 1}
+		{item "knife_v1c" 1}
+		{item "bandage" 5}
+		{in_hands 0}
+	}
+}

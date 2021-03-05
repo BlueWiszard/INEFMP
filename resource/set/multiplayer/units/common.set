@@ -1,0 +1,21 @@
+;SDL
+{units
+	(include "cp_usa.set")
+	(include "cp_grm.set")
+	(include "cp_uaf.set")
+	(include "cp_reb.set")
+	(include "cp_ger.set")
+	(include "cp_rus.set")
+	(include "cp_ltu.set")
+	
+	(include "squads.set")
+	
+	(include "vehicles.set")
+	(include "vehicles_usa.set")
+	(include "vehicles_grm.set")
+	(include "vehicles_uaf.set")
+	(include "vehicles_reb.set")
+	(include "vehicles_ger.set")
+	(include "vehicles_rus.set")
+	(include "vehicles_ltu.set")
+}

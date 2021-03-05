@@ -1,0 +1,26 @@
+{breed
+	{skin "ger_t3_1"}
+	{portrait "ger_t3"}
+	{nationality ltu}
+	{icon "squad16"}
+	{icon_priority 1}
+	{field_icon "ger_t2"}
+	{armors
+		
+	}
+	{perks
+		(include "perks_heroes.inc")
+		("perk_assault")
+		{"vision" "human2"}
+	}
+	{veterancy
+		(include "veterancy_guerilla.inc")
+		("veterancy_1")
+	}
+	{inventory
+		{item "pistol_v2c" filled}
+		{item "knife_v1c" 1}
+		{item "bandage" 5}
+		{in_hands 0}
+	}
+}

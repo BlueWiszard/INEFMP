@@ -1,0 +1,33 @@
+{breed
+	{skin "ger_sniper"}
+	{portrait "ger_sniper"}
+	{nationality ltu}
+	{icon "squad2"}
+	{icon_priority 2}
+	{field_icon "ger_scout"}
+	{armors
+		
+	}
+	{perks
+		(include "perks_generic.inc")
+		("perk_t2")
+		
+		{"stamina" "150%"
+		}		
+		{"speed" 1.25
+		}
+	}
+	{veterancy
+		(include "veterancy_generic.inc")
+		("veterancy_1")
+	}
+	{inventory
+		{item "g36a2_v1" filled}
+		{item "pistol_v1c" filled}
+		{item "grenade dm51" 1}
+		{item "grenade anm8" 1}
+		{item "knife_v1c" 1}
+		{item "bandage" 5}
+		{in_hands 0}
+	}
+}

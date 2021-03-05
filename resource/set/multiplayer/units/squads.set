@@ -1,0 +1,349 @@
+;----- Squads -----
+
+;같컂eneric같�
+
+(define "generic_vi"
+    {charge 
+		{delay %cd}
+		{interval %ci}
+	}
+	{tags "%t"}
+	{group "%g"}
+	{button "%b"}
+)
+
+
+;같캳quads define같�
+
+(define "squad_with1types"
+	{"%name(%side)"
+		{charge 
+			{delay %cd}
+			{interval %ci}
+		}
+		{content "mp/%side/%c1"}
+		{tags "%side %t"}
+		{group "%g"}
+		{button "%b"}
+		{level %level}
+		{cost %cost}
+		{research_stage %research_stage}
+		{squad_cost_factor %scf}
+	}
+)
+
+(define "squad_with2types"
+	{"%name(%side)"
+		{charge 
+			{delay %cd}
+			{interval %ci}
+		}
+		{content "mp/%side/%c1 mp/%side/%c2"}
+		{tags "%side %t"}
+		{group "%g"}
+		{button "%b"}
+		{level %level}
+		{cost %cost}
+		{fore %f}
+		{research_stage %research_stage}
+		{squad_cost_factor %scf}
+	}
+)
+
+(define "squad_with3types"
+	{"%name(%side)"
+		{charge 
+			{delay %cd}
+			{interval %ci}
+		}
+		{content "mp/%side/%c1 mp/%side/%c2 mp/%side/%c3"}
+		{tags "%side %t"}
+		{group "%g"}
+		{button "%b"}
+		{level %level}
+		{cost %cost}
+		{research_stage %research_stage}
+		{squad_cost_factor %scf}
+	}
+)
+
+(define "squad_with4types"
+	{"%name(%side)"
+		{charge 
+			{delay %cd}
+			{interval %ci}
+		}
+		{content "mp/%side/%c1 mp/%side/%c2 mp/%side/%c3 mp/%side/%c4"}
+		{tags "%side %t"}
+		{group "%g"}
+		{button "%b"}
+		{level %level}
+		{cost %cost}
+		{research_stage %research_stage}
+		{squad_cost_factor %scf}
+	}
+)
+
+(define "squad_with5types"
+	{"%name(%side)"
+		{charge 
+			{delay %cd}
+			{interval %ci}
+		}
+		{content "mp/%side/%c1 mp/%side/%c2 mp/%side/%c3 mp/%side/%c4 mp/%side/%c5"}
+		{tags "%side %t"}
+		{group "%g"}
+		{button "%b"}
+		{level %level}
+		{cost %cost}
+		{research_stage %research_stage}
+		{squad_cost_factor %scf}
+	}
+)
+
+
+;같캳quads같�
+
+;// USA
+
+("squad_with3types" side(usa) name(squad1) cd(0) ci(0) g(a1) c1(t2_02:2) c2(t2_03:2) c3(t2_sq:1) b(s1) t(all infantry combined_arms conquest)					level(1) research_stage(1) cost(0) scf(1))
+("squad_with4types" side(usa) name(squad2) cd(0) ci(0) g(a2) c1(t2_01:1) c2(t2_02:1) c3(t2_04:2) c4(t2_sq:1) b(s1) t(all infantry combined_arms conquest)		level(1) research_stage(1) cost(0) scf(1))
+("squad_with4types" side(usa) name(squad3) cd(0) ci(0) g(a3) c1(t2_07:2) c2(t2_05:1) c3(t2_medic:1) c4(t2_sq:1) b(s1) t(all infantry combined_arms conquest)	level(1) research_stage(1) cost(0) scf(1))
+
+("squad_with5types" side(usa) name(squad4) cd(0) ci(0) g(a4) c1(t3_01:1) c2(t3_02:1) c3(t3_03:1) c4(t3_medic:1) c5(t3_sq:1) b(s1) t(all infantry combined_arms conquest)	level(2) research_stage(2) cost(0) scf(1))
+("squad_with4types" side(usa) name(squad5) cd(0) ci(0) g(a5) c1(t4_01:2) c2(t4_02:1) c3(t4_03:1) c4(t4_sq:1) b(s1) t(all infantry combined_arms conquest)					level(4) research_stage(3) cost(0) scf(1))
+("squad_with4types" side(usa) name(squad6) cd(0) ci(0) g(a6) c1(t5_01:1) c2(t5_02:2) c3(t5_03:1) c4(t5_sq:1) b(s1) t(all infantry combined_arms conquest)					level(6) research_stage(4) cost(0) scf(1))
+
+("squad_with1types" side(usa) name(squad12) cd(300) ci(30) g(b1) c1(tx_tankman_01:2) b(s2) t(all infantry armored_warfare combined_arms conquest)	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(usa) name(squad11) cd(0) ci(30) g(b2) c1(tx_engineer_01:2) b(s2) t(all infantry armored_warfare combined_arms conquest)	level(1) research_stage(1) cost(0) scf(1))
+("squad_with3types" side(usa) name(squad7) cd(0) ci(30) g(b3) c1(t2_01:1) c2(t2_02:1) c3(t2_medic:1) b(s2) t(all infantry combined_arms conquest)	level(1) research_stage(1) cost(0) scf(1))
+
+("squad_with2types" side(usa) name(squad8) cd(0) ci(30) g(b4) c1(t2_07:2) c2(t2_05:1) b(s2) t(all infantry combined_arms conquest)							level(1) research_stage(1) cost(0) scf(1))
+("squad_with2types" side(usa) name(squad9) cd(90) ci(90) g(b5) c1(t2_02:1) c2(tx_at_01:2) b(s2) t(all infantry armored_warfare combined_arms conquest)		level(1) research_stage(1) cost(0) scf(1))
+("squad_with2types" side(usa) name(squad10) cd(90) ci(90) g(b6) c1(tx_sniper_01:1) c2(tx_sniper_02:1) b(s2) t(all infantry sniper combined_arms conquest)	level(1) research_stage(6) cost(0) scf(1))
+
+("squad_with2types" side(usa) name(squad13) cd(60) ci(60) g(b7) c1(t2_06:2) c2(t2_sq:1) b(s2) t(all infantry combined_arms conquest)						level(8) research_stage(3) cost(0) scf(1))
+("squad_with2types" side(usa) name(squad14) cd(60) ci(60) g(b8) c1(t3_04:2) c2(t3_sq:1) b(s2) t(all infantry combined_arms conquest)						level(10) research_stage(5) cost(0) scf(1))
+("squad_with2types" side(usa) name(squad15) cd(150) ci(150) g(b9) c1(tx_sniper_03:1) c2(tx_sniper_02:1) b(s2) t(all infantry sniper combined_arms conquest)	level(12) research_stage(7) cost(0) scf(1))
+
+("squad_with1types" side(usa) name(squad16) cd(0) ci(0) g(b10) c1(th_assault:1) 		b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(usa) name(squad17) cd(0) ci(0) g(b10) c1(th_assault2:1) 		b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(usa) name(squad18) cd(0) ci(0) g(b10) c1(th_mg:1) 				b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(usa) name(squad19) cd(0) ci(0) g(b10) c1(th_scout:1) 			b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(usa) name(squad20) cd(0) ci(0) g(b10) c1(th_marksman:1) 		b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(usa) name(squad21) cd(0) ci(0) g(b10) c1(th_shotgunner:1) 		b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(usa) name(squad22) cd(0) ci(0) g(b10) c1(th_specop:1) 			b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(usa) name(squad23) cd(0) ci(0) g(b10) c1(th_heavy_assault:1) 	b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(usa) name(squad24) cd(0) ci(0) g(b10) c1(th_sniper:1) 			b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+
+("squad_with1types" side(usa) name(squad25) cd(0) ci(0) g(b10) c1(tg_main:1) 			b(s1) t(guerrilla) 	level(1) research_stage(1) cost(0) scf(1))
+
+
+;// GRM
+
+("squad_with4types" side(grm) name(squad1) cd(30) ci(30) g(a1) c1(t1_01:3) c2(t1_02:2) c3(t1_03:2) c4(t1_sq:1) b(s1) t(all infantry combined_arms conquest)		level(1) research_stage(1) cost(0) scf(1))
+("squad_with4types" side(grm) name(squad2) cd(0) ci(0) g(a2) c1(t2_01:1) c2(t2_02:2) c3(t2_03:2) c4(t2_sq:1) b(s1) t(all infantry combined_arms conquest)		level(1) research_stage(1) cost(0) scf(1))
+("squad_with4types" side(grm) name(squad3) cd(0) ci(0) g(a3) c1(t2_05:3) c2(t2_04:1) c3(t2_medic:1) c4(t2_sq:1) b(s1) t(all infantry combined_arms conquest)	level(1) research_stage(1) cost(0) scf(1))
+
+("squad_with5types" side(grm) name(squad4) cd(0) ci(0) g(a4) c1(t3_01:1) c2(t3_02:2) c3(t3_03:1) c4(t3_medic:1) c5(t3_sq:1) b(s1) t(all infantry combined_arms conquest)	level(2) research_stage(2) cost(0) scf(1))
+("squad_with4types" side(grm) name(squad5) cd(0) ci(0) g(a5) c1(t4_01:2) c2(t4_02:2) c3(t4_03:1) c4(t4_sq:1) b(s1) t(all infantry combined_arms conquest)					level(4) research_stage(3) cost(0) scf(1))
+("squad_with4types" side(grm) name(squad6) cd(0) ci(0) g(a6) c1(t5_01:2) c2(t5_02:2) c3(t5_03:1) c4(t5_sq:1) b(s1) t(all infantry combined_arms conquest)					level(6) research_stage(4) cost(0) scf(1))
+
+("squad_with1types" side(grm) name(squad12) cd(300) ci(30) g(b1) c1(tx_tankman_01:2) b(s2) t(all infantry armored_warfare combined_arms conquest)	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(grm) name(squad11) cd(0) ci(30) g(b2) c1(tx_engineer_01:2) b(s2) t(all infantry armored_warfare combined_arms conquest)	level(1) research_stage(1) cost(0) scf(1))
+("squad_with3types" side(grm) name(squad7) cd(0) ci(30) g(b3) c1(t2_01:1) c2(t2_02:1) c3(t2_medic:1) b(s2) t(all infantry combined_arms conquest)	level(1) research_stage(1) cost(0) scf(1))
+
+("squad_with2types" side(grm) name(squad8) cd(0) ci(30) g(b4) c1(t2_05:2) c2(t2_04:1) b(s2) t(all infantry combined_arms conquest)							level(1) research_stage(1) cost(0) scf(1))
+("squad_with2types" side(grm) name(squad9) cd(90) ci(90) g(b5) c1(t2_02:2) c2(tx_at_01:1) b(s2) t(all infantry armored_warfare combined_arms conquest)		level(1) research_stage(1) cost(0) scf(1))
+("squad_with2types" side(grm) name(squad10) cd(90) ci(90) g(b6) c1(tx_sniper_01:1) c2(tx_sniper_02:1) b(s2) t(all infantry sniper combined_arms conquest)	level(1) research_stage(6) cost(0) scf(1))
+
+("squad_with4types" side(grm) name(squad13) cd(60) ci(60) g(b7) c1(t1b_01:2) c2(t1b_02:1) c3(t1b_03:1) c4(t1b_sq:1) b(s2) t(all infantry combined_arms conquest)	level(8) research_stage(3) cost(0) scf(1))
+("squad_with2types" side(grm) name(squad14) cd(60) ci(60) g(b8) c1(t3_04:2) c2(t3_sq:1) b(s2) t(all infantry combined_arms conquest)								level(10) research_stage(5) cost(0) scf(1))
+("squad_with2types" side(grm) name(squad15) cd(150) ci(150) g(b9) c1(t4_02:2) c2(tx_at_02:1) b(s2) t(all infantry combined_arms conquest)							level(12) research_stage(7) cost(0) scf(1))
+
+("squad_with1types" side(grm) name(squad16) cd(0) ci(0) g(b10) c1(th_assault:1) 		b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(grm) name(squad17) cd(0) ci(0) g(b10) c1(th_assault2:1)		b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(grm) name(squad18) cd(0) ci(0) g(b10) c1(th_mg:1) 				b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(grm) name(squad19) cd(0) ci(0) g(b10) c1(th_scout:1) 			b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(grm) name(squad20) cd(0) ci(0) g(b10) c1(th_marksman:1) 		b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(grm) name(squad21) cd(0) ci(0) g(b10) c1(th_shotgunner:1) 		b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(grm) name(squad22) cd(0) ci(0) g(b10) c1(th_specop:1) 			b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(grm) name(squad23) cd(0) ci(0) g(b10) c1(th_heavy_assault:1) 	b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(grm) name(squad24) cd(0) ci(0) g(b10) c1(th_sniper:1) 			b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+
+("squad_with1types" side(grm) name(squad25) cd(0) ci(0) g(b10) c1(tg_main:1) 			b(s1) t(guerrilla) 	level(1) research_stage(1) cost(0) scf(1))
+
+
+;// UAF
+
+("squad_with3types" side(uaf) name(squad1) cd(0) ci(0) g(a1) c1(t2_01:2) c2(t2_02:1) c3(t2_sq:1) b(s1) t(all infantry combined_arms conquest)					level(1) research_stage(1) cost(0) scf(1))
+("squad_with3types" side(uaf) name(squad2) cd(0) ci(0) g(a2) c1(t2_01:2) c2(t2_02:2) c3(t2_sq:1) b(s1) t(all infantry combined_arms conquest)					level(1) research_stage(1) cost(0) scf(1))
+("squad_with4types" side(uaf) name(squad3) cd(0) ci(0) g(a3) c1(t2_05:3) c2(t2_04:1) c3(t2_medic:1) c4(t2_sq:1) b(s1) t(all infantry combined_arms conquest)	level(1) research_stage(1) cost(0) scf(1))
+
+("squad_with5types" side(uaf) name(squad4) cd(0) ci(0) g(a4) c1(t3_01:1) c2(t3_02:2) c3(t3_03:1) c4(t3_medic:1) c5(t3_sq:1) b(s1) t(all infantry combined_arms conquest)	level(2) research_stage(2) cost(0) scf(1))
+("squad_with4types" side(uaf) name(squad5) cd(0) ci(0) g(a5) c1(t4_01:2) c2(t4_02:2) c3(t4_03:1) c4(t4_sq:1) b(s1) t(all infantry combined_arms conquest)					level(4) research_stage(3) cost(0) scf(1))
+("squad_with4types" side(uaf) name(squad6) cd(0) ci(0) g(a6) c1(t5_01:2) c2(t5_02:2) c3(t5_03:1) c4(t5_sq:1) b(s1) t(all infantry combined_arms conquest)					level(6) research_stage(4) cost(0) scf(1))
+
+("squad_with1types" side(uaf) name(squad12) cd(300) ci(30) g(b1) c1(tx_tankman_01:2) b(s2) t(all infantry armored_warfare combined_arms conquest)	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(uaf) name(squad11) cd(0) ci(30) g(b2) c1(tx_engineer_01:2) b(s2) t(all infantry armored_warfare combined_arms conquest)	level(1) research_stage(1) cost(0) scf(1))
+("squad_with3types" side(uaf) name(squad7) cd(0) ci(30) g(b3) c1(t2_01:1) c2(t2_02:1) c3(t2_medic:1) b(s2) t(all infantry combined_arms conquest)	level(1) research_stage(1) cost(0) scf(1))
+
+("squad_with2types" side(uaf) name(squad8) cd(0) ci(30) g(b4) c1(t2_05:2) c2(t2_04:1) b(s2) t(all infantry combined_arms conquest)							level(1) research_stage(1) cost(0) scf(1))
+("squad_with2types" side(uaf) name(squad9) cd(90) ci(90) g(b5) c1(t2_02:2) c2(tx_at_01:1) b(s2) t(all infantry armored_warfare combined_arms conquest)		level(1) research_stage(1) cost(0) scf(1))
+("squad_with2types" side(uaf) name(squad10) cd(90) ci(90) g(b6) c1(tx_sniper_01:1) c2(tx_sniper_02:1) b(s2) t(all infantry sniper combined_arms conquest)	level(1) research_stage(6) cost(0) scf(1))
+
+("squad_with2types" side(uaf) name(squad13) cd(60) ci(60) g(b7) c1(t2_03:2) c2(t2_01:1) b(s2) t(all infantry combined_arms conquest)		level(8) research_stage(3) cost(0) scf(1))
+("squad_with2types" side(uaf) name(squad14) cd(60) ci(60) g(b8) c1(t3_04:2) c2(t3_sq:1) b(s2) t(all infantry combined_arms conquest)		level(10) research_stage(5) cost(0) scf(1))
+("squad_with2types" side(uaf) name(squad15) cd(150) ci(150) g(b9) c1(t4_02:2) c2(tx_at_02:1) b(s2) t(all infantry combined_arms conquest)	level(12) research_stage(7) cost(0) scf(1))
+
+("squad_with1types" side(uaf) name(squad16) cd(0) ci(0) g(b10) c1(th_assault:1) 		b(s1) t(heroes) 	level(1) research_stage(1) cost(0)		scf(0))
+("squad_with1types" side(uaf) name(squad17) cd(0) ci(0) g(b10) c1(th_assault2:1) 		b(s1) t(heroes) 	level(1) research_stage(1) cost(0)		scf(0))
+("squad_with1types" side(uaf) name(squad18) cd(0) ci(0) g(b10) c1(th_mg:1) 				b(s1) t(heroes) 	level(1) research_stage(1) cost(0)		scf(0))
+("squad_with1types" side(uaf) name(squad19) cd(0) ci(0) g(b10) c1(th_scout:1) 			b(s1) t(heroes) 	level(1) research_stage(1) cost(0)		scf(0))
+("squad_with1types" side(uaf) name(squad20) cd(0) ci(0) g(b10) c1(th_marksman:1) 		b(s1) t(heroes) 	level(1) research_stage(1) cost(0)		scf(0))
+("squad_with1types" side(uaf) name(squad21) cd(0) ci(0) g(b10) c1(th_shotgunner:1) 		b(s1) t(heroes) 	level(1) research_stage(1) cost(0)		scf(0))
+("squad_with1types" side(uaf) name(squad22) cd(0) ci(0) g(b10) c1(th_specop:1) 			b(s1) t(heroes) 	level(1) research_stage(1) cost(0)		scf(0))
+("squad_with1types" side(uaf) name(squad23) cd(0) ci(0) g(b10) c1(th_heavy_assault:1) 	b(s1) t(heroes) 	level(1) research_stage(1) cost(0)		scf(0))
+("squad_with1types" side(uaf) name(squad24) cd(0) ci(0) g(b10) c1(th_sniper:1) 			b(s1) t(heroes) 	level(1) research_stage(1) cost(0)		scf(0))
+
+("squad_with1types" side(uaf) name(squad25) cd(0) ci(0) g(b10) c1(tg_main:1) 			b(s1) t(guerrilla) 	level(1) research_stage(1) cost(0)		scf(0))
+
+
+;// Rebels
+
+("squad_with3types" side(reb) name(squad1) cd(0) ci(0) g(a1) c1(t2_01:2) c2(t2_02:1) c3(t2_sq:1) b(s1) t(all infantry combined_arms conquest)					level(1) research_stage(1) cost(0) scf(1))
+("squad_with4types" side(reb) name(squad2) cd(0) ci(0) g(a2) c1(t2_01:1) c2(t2_02:1) c3(t2_03:2) c4(t2_sq:1) b(s1) t(all infantry combined_arms conquest)		level(1) research_stage(1) cost(0) scf(1))
+("squad_with4types" side(reb) name(squad3) cd(0) ci(0) g(a3) c1(t2_05:2) c2(t2_04:1) c3(t2_medic:1) c4(t2_sq:1) b(s1) t(all infantry combined_arms conquest)	level(1) research_stage(1) cost(0) scf(1))
+
+("squad_with5types" side(reb) name(squad4) cd(0) ci(0) g(a4) c1(t3_01:1) c2(t3_02:1) c3(t3_03:1) c4(t3_medic:1) c5(t3_sq:1) b(s1) t(all infantry combined_arms conquest)	level(2) research_stage(2) cost(0) scf(1))
+("squad_with4types" side(reb) name(squad5) cd(0) ci(0) g(a5) c1(t4_01:2) c2(t4_02:1) c3(t4_03:1) c4(t4_sq:1) b(s1) t(all infantry combined_arms conquest)					level(4) research_stage(3) cost(0) scf(1))
+("squad_with4types" side(reb) name(squad6) cd(0) ci(0) g(a6) c1(t5_01:2) c2(t5_02:1) c3(t5_03:1) c4(t5_sq:1) b(s1) t(all infantry combined_arms conquest)					level(6) research_stage(4) cost(0) scf(1))
+
+("squad_with1types" side(reb) name(squad12) cd(300) ci(30) g(b1) c1(tx_tankman_01:2) b(s2) t(all infantry armored_warfare combined_arms conquest)	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(reb) name(squad11) cd(0) ci(30) g(b2) c1(tx_engineer_01:2) b(s2) t(all infantry armored_warfare combined_arms conquest)	level(1) research_stage(1) cost(0) scf(1))
+("squad_with3types" side(reb) name(squad7) cd(0) ci(30) g(b3) c1(t2_01:1) c2(t2_02:1) c3(t2_medic:1) b(s2) t(all infantry combined_arms conquest)	level(1) research_stage(1) cost(0) scf(1))
+
+("squad_with2types" side(reb) name(squad8) cd(0) ci(30) g(b4) c1(t2_05:2) c2(t2_04:1) b(s2) t(all infantry combined_arms conquest)							level(1) research_stage(1) cost(0) scf(1))
+("squad_with2types" side(reb) name(squad9) cd(90) ci(90) g(b5) c1(t2_02:2) c2(tx_at_01:1) b(s2) t(all infantry armored_warfare combined_arms conquest)		level(1) research_stage(1) cost(0) scf(1))
+("squad_with2types" side(reb) name(squad10) cd(90) ci(90) g(b6) c1(tx_sniper_01:1) c2(tx_sniper_02:1) b(s2) t(all infantry sniper combined_arms conquest)	level(1) research_stage(6) cost(0) scf(1))
+
+("squad_with3types" side(reb) name(squad13) cd(60) ci(60) g(b7) c1(t2_07:2) c2(t2_06:1) c3(t2_sq:1) b(s2) t(all infantry combined_arms conquest)	level(8) research_stage(3) cost(0) scf(1))
+("squad_with1types" side(reb) name(squad14) cd(60) ci(60) g(b8) c1(t5_04:2) b(s2) t(all infantry combined_arms conquest)							level(10) research_stage(5) cost(0) scf(1))
+("squad_with2types" side(reb) name(squad15) cd(150) ci(150) g(b9) c1(t4_02:2) c2(tx_at_02:1) b(s2) t(all infantry combined_arms conquest)			level(12) research_stage(7) cost(0) scf(1))
+
+("squad_with1types" side(reb) name(squad16) cd(0) ci(0) g(b10) c1(th_assault:1) 		b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(reb) name(squad17) cd(0) ci(0) g(b10) c1(th_assault2:1) 		b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(reb) name(squad18) cd(0) ci(0) g(b10) c1(th_mg:1) 				b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(reb) name(squad19) cd(0) ci(0) g(b10) c1(th_scout:1) 			b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(reb) name(squad20) cd(0) ci(0) g(b10) c1(th_marksman:1) 		b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(reb) name(squad21) cd(0) ci(0) g(b10) c1(th_shotgunner:1) 		b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(reb) name(squad22) cd(0) ci(0) g(b10) c1(th_specop:1) 			b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(reb) name(squad23) cd(0) ci(0) g(b10) c1(th_heavy_assault:1) 	b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(reb) name(squad24) cd(0) ci(0) g(b10) c1(th_sniper:1) 			b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+
+("squad_with1types" side(reb) name(squad25) cd(0) ci(0) g(b10) c1(tg_main:1) 			b(s1) t(guerrilla) 	level(1) research_stage(1) cost(0) scf(1))
+
+
+;// GER
+
+("squad_with3types" side(ger) name(squad1) cd(0) ci(0) g(a1) c1(t2_02:2) c2(t2_03:2) c3(t2_sq:1) b(s1) t(all infantry combined_arms conquest)					level(1) research_stage(1) cost(0) scf(1))
+("squad_with4types" side(ger) name(squad2) cd(0) ci(0) g(a2) c1(t2_01:1) c2(t2_02:1) c3(t2_04:2) c4(t2_sq:1) b(s1) t(all infantry combined_arms conquest)		level(1) research_stage(1) cost(0) scf(1))
+("squad_with4types" side(ger) name(squad3) cd(0) ci(0) g(a3) c1(t2_07:2) c2(t2_05:1) c3(t2_medic:1) c4(t2_sq:1) b(s1) t(all infantry combined_arms conquest)	level(1) research_stage(1) cost(0) scf(1))
+
+("squad_with5types" side(ger) name(squad4) cd(0) ci(30) g(a4) c1(t3_01:1) c2(t3_02:1) c3(t3_03:1) c4(t3_medic:1) c5(t3_sq:1) b(s1) t(all infantry combined_arms conquest)	level(2) research_stage(2) cost(0) scf(1))
+("squad_with4types" side(ger) name(squad5) cd(0) ci(30) g(a5) c1(t4_01:2) c2(t4_02:1) c3(t4_03:1) c4(t4_sq:1) b(s1) t(all infantry combined_arms conquest)					level(4) research_stage(3) cost(0) scf(1))
+("squad_with4types" side(ger) name(squad6) cd(0) ci(30) g(a6) c1(t5_01:1) c2(t5_02:2) c3(t5_03:1) c4(t5_sq:1) b(s1) t(all infantry combined_arms conquest)					level(6) research_stage(4) cost(0) scf(1))
+
+("squad_with1types" side(ger) name(squad12) cd(300) ci(30) g(b1) c1(tx_tankman_01:2) b(s2) t(all infantry armored_warfare combined_arms conquest)	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(ger) name(squad11) cd(0) ci(30) g(b2) c1(tx_engineer_01:2) b(s2) t(all infantry armored_warfare combined_arms conquest)	level(1) research_stage(1) cost(0) scf(1))
+("squad_with3types" side(ger) name(squad7) cd(0) ci(30) g(b3) c1(t2_01:1) c2(t2_02:1) c3(t2_medic:1) b(s2) t(all infantry combined_arms conquest)	level(1) research_stage(1) cost(0) scf(1))
+
+("squad_with2types" side(ger) name(squad8) cd(0) ci(30) g(b4) c1(t2_07:2) c2(t2_05:1) b(s2) t(all infantry combined_arms conquest)							level(1) research_stage(1) cost(0) scf(1))
+("squad_with2types" side(ger) name(squad9) cd(90) ci(90) g(b5) c1(t2_02:2) c2(tx_at_01:1) b(s2) t(all infantry armored_warfare combined_arms conquest)		level(1) research_stage(1) cost(0) scf(1))
+("squad_with2types" side(ger) name(squad10) cd(90) ci(90) g(b6) c1(tx_sniper_01:1) c2(tx_sniper_02:1) b(s2) t(all infantry sniper combined_arms conquest)	level(1) research_stage(6) cost(0) scf(1))
+
+("squad_with2types" side(ger) name(squad13) cd(60) ci(60) g(b7) c1(t2b_01:2) c2(t2b_02:1) b(s2) t(all infantry combined_arms conquest)	level(8) research_stage(3) cost(0) scf(1))
+("squad_with2types" side(ger) name(squad14) cd(60) ci(60) g(b8) c1(t4_04:2) c2(t4_sq:1) b(s2) t(all infantry combined_arms conquest)	level(10) research_stage(5) cost(0) scf(1))
+("squad_with1types" side(ger) name(squad15) cd(150) ci(150) g(b9) c1(tx_engineer_02:2) b(s2) t(all infantry combined_arms conquest)		level(12) research_stage(7) cost(0) scf(1))
+
+("squad_with1types" side(ger) name(squad16) cd(0) ci(0) g(b10) c1(th_assault:1) 		b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(ger) name(squad17) cd(0) ci(0) g(b10) c1(th_assault2:1) 		b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(ger) name(squad18) cd(0) ci(0) g(b10) c1(th_mg:1) 				b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(ger) name(squad19) cd(0) ci(0) g(b10) c1(th_scout:1) 			b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(ger) name(squad20) cd(0) ci(0) g(b10) c1(th_marksman:1) 		b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(ger) name(squad21) cd(0) ci(0) g(b10) c1(th_shotgunner:1) 		b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(ger) name(squad22) cd(0) ci(0) g(b10) c1(th_specop:1) 			b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(ger) name(squad23) cd(0) ci(0) g(b10) c1(th_heavy_assault:1) 	b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(ger) name(squad24) cd(0) ci(0) g(b10) c1(th_sniper:1) 			b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+
+("squad_with1types" side(ger) name(squad25) cd(0) ci(0) g(b10) c1(tg_main:1) 			b(s1) t(guerrilla) 	level(1) research_stage(1) cost(0) scf(1))
+
+
+;// RUS
+
+("squad_with3types" side(rus) name(squad1) cd(0) ci(0) g(a1) c1(t2_07:2) c2(t2_01:1) c3(t2_sq:1) b(s1) t(all infantry combined_arms conquest)					level(1) research_stage(1) cost(0) scf(1))
+("squad_with4types" side(rus) name(squad2) cd(0) ci(0) g(a2) c1(t2_01:1) c2(t2_02:1) c3(t2_03:2) c4(t2_sq:1) b(s1) t(all infantry combined_arms conquest)		level(1) research_stage(1) cost(0) scf(1))
+("squad_with4types" side(rus) name(squad3) cd(0) ci(0) g(a3) c1(t2_05:2) c2(t2_04:1) c3(t2_medic:1) c4(t2_sq:1) b(s1) t(all infantry combined_arms conquest)	level(1) research_stage(1) cost(0) scf(1))
+
+("squad_with5types" side(rus) name(squad4) cd(0) ci(30) g(a4) c1(t3_01:1) c2(t3_02:1) c3(t3_03:1) c4(t3_medic:1) c5(t3_sq:1) b(s1) t(all infantry combined_arms conquest)	level(2) research_stage(2) cost(0) scf(1))
+("squad_with4types" side(rus) name(squad5) cd(0) ci(30) g(a5) c1(t4_01:2) c2(t4_02:1) c3(t4_03:1) c4(t4_sq:1) b(s1) t(all infantry combined_arms conquest)					level(4) research_stage(3) cost(0) scf(1))
+("squad_with4types" side(rus) name(squad6) cd(0) ci(30) g(a6) c1(t5_01:2) c2(t5_02:1) c3(t5_03:1) c4(t5_sq:1) b(s1) t(all infantry combined_arms conquest)					level(6) research_stage(4) cost(0) scf(1))
+
+("squad_with1types" side(rus) name(squad12) cd(300) ci(30) g(b1) c1(tx_tankman_01:2) b(s2) t(all infantry armored_warfare combined_arms conquest)	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(rus) name(squad11) cd(0) ci(30) g(b2) c1(tx_engineer_01:2) b(s2) t(all infantry armored_warfare combined_arms conquest)	level(1) research_stage(1) cost(0) scf(1))
+("squad_with3types" side(rus) name(squad7) cd(0) ci(30) g(b3) c1(t2_01:1) c2(t2_02:1) c3(t2_medic:1) b(s2) t(all infantry combined_arms conquest)	level(1) research_stage(1) cost(0) scf(1))
+
+("squad_with2types" side(rus) name(squad8) cd(0) ci(30) g(b4) c1(t2_05:2) c2(t2_04:1) b(s2) t(all infantry combined_arms conquest)							level(1) research_stage(1) cost(0) scf(1))
+("squad_with2types" side(rus) name(squad9) cd(90) ci(90) g(b5) c1(t2_02:2) c2(tx_at_01:1) b(s2) t(all infantry armored_warfare combined_arms conquest)		level(1) research_stage(1) cost(0) scf(1))
+("squad_with2types" side(rus) name(squad10) cd(90) ci(90) g(b6) c1(tx_sniper_01:1) c2(tx_sniper_02:1) b(s2) t(all infantry sniper combined_arms conquest)	level(1) research_stage(6) cost(0) scf(1))
+
+("squad_with2types" side(rus) name(squad13) cd(60) ci(60) g(b7) c1(t2_06:2) c2(t2_sq:1) b(s2) t(all infantry combined_arms conquest)						level(8) research_stage(3) cost(0) scf(1))
+("squad_with2types" side(rus) name(squad14) cd(60) ci(60) g(b8) c1(t3_04:1) c2(t3_sq:2) b(s2) t(all infantry combined_arms conquest)						level(10) research_stage(5) cost(0) scf(1))
+("squad_with2types" side(rus) name(squad15) cd(150) ci(150) g(b9) c1(tx_sniper_03:1) c2(tx_sniper_04:1) b(s2) t(all infantry sniper combined_arms conquest)	level(12) research_stage(7) cost(0) scf(1))
+
+("squad_with1types" side(rus) name(squad16) cd(0) ci(0) g(b10) c1(th_assault:1) 		b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(rus) name(squad17) cd(0) ci(0) g(b10) c1(th_assault2:1) 		b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(rus) name(squad18) cd(0) ci(0) g(b10) c1(th_mg:1) 				b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(rus) name(squad19) cd(0) ci(0) g(b10) c1(th_scout:1) 			b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(rus) name(squad20) cd(0) ci(0) g(b10) c1(th_marksman:1) 		b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(rus) name(squad21) cd(0) ci(0) g(b10) c1(th_shotgunner:1) 		b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(rus) name(squad22) cd(0) ci(0) g(b10) c1(th_specop:1) 			b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(rus) name(squad23) cd(0) ci(0) g(b10) c1(th_heavy_assault:1) 	b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(rus) name(squad24) cd(0) ci(0) g(b10) c1(th_sniper:1) 			b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+
+("squad_with1types" side(rus) name(squad25) cd(0) ci(0) g(b10) c1(tg_main:1) 			b(s1) t(guerrilla) 	level(1) research_stage(1) cost(0) scf(1))
+
+
+;// LTU
+
+("squad_with3types" side(ltu) name(squad1) cd(0) ci(0) g(a1) c1(t2_02:2) c2(t2_03:2) c3(t2_sq:1) b(s1) t(all infantry combined_arms conquest)					level(1) research_stage(1) cost(0) scf(1))
+("squad_with4types" side(ltu) name(squad2) cd(0) ci(0) g(a2) c1(t2_01:1) c2(t2_02:1) c3(t2_04:2) c4(t2_sq:1) b(s1) t(all infantry combined_arms conquest)		level(1) research_stage(1) cost(0) scf(1))
+("squad_with4types" side(ltu) name(squad3) cd(0) ci(0) g(a3) c1(t2_07:2) c2(t2_05:1) c3(t2_medic:1) c4(t2_sq:1) b(s1) t(all infantry combined_arms conquest)	level(1) research_stage(1) cost(0) scf(1))
+
+("squad_with5types" side(ltu) name(squad4) cd(0) ci(30) g(a4) c1(t3_01:1) c2(t3_02:1) c3(t3_03:1) c4(t3_medic:1) c5(t3_sq:1) b(s1) t(all infantry combined_arms conquest)	level(2) research_stage(2) cost(0) scf(1))
+("squad_with4types" side(ltu) name(squad5) cd(0) ci(30) g(a5) c1(t4_01:2) c2(t4_02:1) c3(t4_03:1) c4(t4_sq:1) b(s1) t(all infantry combined_arms conquest)					level(4) research_stage(3) cost(0) scf(1))
+("squad_with4types" side(ltu) name(squad6) cd(0) ci(30) g(a6) c1(t5_01:1) c2(t5_02:2) c3(t5_03:1) c4(t5_sq:1) b(s1) t(all infantry combined_arms conquest)					level(6) research_stage(4) cost(0) scf(1))
+
+("squad_with1types" side(ltu) name(squad12) cd(300) ci(30) g(b1) c1(tx_tankman_01:2) b(s2) t(all infantry armored_warfare combined_arms conquest)	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(ltu) name(squad11) cd(0) ci(30) g(b2) c1(tx_engineer_01:2) b(s2) t(all infantry armored_warfare combined_arms conquest)	level(1) research_stage(1) cost(0) scf(1))
+("squad_with3types" side(ltu) name(squad7) cd(0) ci(30) g(b3) c1(t2_01:1) c2(t2_02:1) c3(t2_medic:1) b(s2) t(all infantry combined_arms conquest)	level(1) research_stage(1) cost(0) scf(1))
+
+("squad_with2types" side(ltu) name(squad8) cd(0) ci(30) g(b4) c1(t2_07:2) c2(t2_05:1) b(s2) t(all infantry combined_arms conquest)							level(1) research_stage(1) cost(0) scf(1))
+("squad_with2types" side(ltu) name(squad9) cd(90) ci(90) g(b5) c1(t2_02:2) c2(tx_at_01:1) b(s2) t(all infantry armored_warfare combined_arms conquest)		level(1) research_stage(1) cost(0) scf(1))
+("squad_with2types" side(ltu) name(squad10) cd(90) ci(90) g(b6) c1(tx_sniper_01:1) c2(tx_sniper_02:1) b(s2) t(all infantry sniper combined_arms conquest)	level(1) research_stage(6) cost(0) scf(1))
+
+("squad_with2types" side(ltu) name(squad13) cd(60) ci(60) g(b7) c1(t2b_01:2) c2(t2b_02:1) b(s2) t(all infantry combined_arms conquest)	level(8) research_stage(3) cost(0) scf(1))
+("squad_with2types" side(ltu) name(squad14) cd(60) ci(60) g(b8) c1(t4_04:2) c2(t4_sq:1) b(s2) t(all infantry combined_arms conquest)	level(10) research_stage(5) cost(0) scf(1))
+("squad_with1types" side(ltu) name(squad15) cd(150) ci(150) g(b9) c1(tx_engineer_02:2) b(s2) t(all infantry combined_arms conquest)		level(12) research_stage(7) cost(0) scf(1))
+
+("squad_with1types" side(ltu) name(squad16) cd(0) ci(0) g(b10) c1(th_assault:1) 		b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(ltu) name(squad17) cd(0) ci(0) g(b10) c1(th_assault2:1) 		b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(ltu) name(squad18) cd(0) ci(0) g(b10) c1(th_mg:1) 				b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(ltu) name(squad19) cd(0) ci(0) g(b10) c1(th_scout:1) 			b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(ltu) name(squad20) cd(0) ci(0) g(b10) c1(th_marksman:1) 		b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(ltu) name(squad21) cd(0) ci(0) g(b10) c1(th_shotgunner:1) 		b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(ltu) name(squad22) cd(0) ci(0) g(b10) c1(th_specop:1) 			b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(ltu) name(squad23) cd(0) ci(0) g(b10) c1(th_heavy_assault:1) 	b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+("squad_with1types" side(ltu) name(squad24) cd(0) ci(0) g(b10) c1(th_sniper:1) 			b(s1) t(heroes) 	level(1) research_stage(1) cost(0) scf(1))
+
+("squad_with1types" side(ltu) name(squad25) cd(0) ci(0) g(b10) c1(tg_main:1) 			b(s1) t(guerrilla) 	level(1) research_stage(1) cost(0) scf(1))

@@ -1,0 +1,28 @@
+{breed
+	{skin "ger_sniper"}
+	{portrait "ger_sniper"}
+	{nationality ltu}
+	{icon "squad24"}
+	{icon_priority 4}
+	{field_icon "ger_t5"}
+	{armors
+		
+	}
+	{perks
+		(include "perks_heroes.inc")
+		("perk_sniper")
+	}
+	{veterancy
+		(include "veterancy_generic.inc")
+		("veterancy_1")
+	}
+	{inventory
+		{item "g22_v1" filled}
+		{item "pistol_v3c" filled}
+		{item "mine claymore" 1}
+		{item "grenade anm8" 1}
+		{item "knife_v1c" 1}
+		{item "bandage" 3}
+		{in_hands 0}
+	}
+}

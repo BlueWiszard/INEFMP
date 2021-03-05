@@ -1,0 +1,33 @@
+{breed
+	{skin "ger_engineer"}
+	{portrait "ger_t2"}
+	{nationality ltu}
+	{icon "squad11"}
+	{icon_priority 3}
+	{field_icon "ger_engineer_2"}
+	{armors	
+		
+	}
+	{perks
+		(include "perks_generic.inc")
+		("perk_t3")
+		{fortification {factor 2}}
+		{mechanic factor 2}
+		("barricade_engineer")
+		{barricade {factor 2}}
+		{"resources" "400%"}
+		{"resources_regeneration" "200%"}
+	}
+	{veterancy
+		(include "veterancy_generic.inc")
+		("veterancy_1")
+	}
+	{inventory
+		{item "g36a2_v1" filled}
+		{item "grenade anm8" 1}
+		{item "mine claymore" 4}
+		{item "c4" 2}
+		{item "bandage" 5}
+		{in_hands 0}
+	}
+}
