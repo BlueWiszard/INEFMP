@@ -457,7 +457,7 @@ msgid "Fishing Boat"
 msgstr ""
 
 msgctxt "desc/human/mp/usa/t3_medic"
-msgid "U.S. Marine Medic"
+msgid "U.S. Navy Corpsman"
 msgstr ""
 
 msgctxt "desc/human/civilian/civilian3"
