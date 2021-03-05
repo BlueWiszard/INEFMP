@@ -197,19 +197,19 @@ msgid "Žvalgai (Motorized)"
 msgstr ""
 
 msgctxt "desc/squad/squad2(ltu)"
-msgid "Pėstininkai"
+msgid "Pėstininkų Grandis"
 msgstr ""
 
 msgctxt "desc/squad/squad2b_ltu"
-msgid "Pėstininkai (Motorized)"
+msgid "Pėstininkų Grandis (Motorized)"
 msgstr ""
 
 msgctxt "desc/squad/squad3(ltu)"
-msgid "MG-Trupp"
+msgid "Pėstininkų Būrys"
 msgstr ""
 
 msgctxt "desc/squad/squad3b_ltu"
-msgid "MG-Trupp (Motorized)"
+msgid "Pėstininkų Būrys (Motorized)"
 msgstr ""
 
 msgctxt "desc/squad/squad4(ltu)"
