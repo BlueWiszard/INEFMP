@@ -1,0 +1,23 @@
+{breed
+	{skin "usa_pilot_head"}
+	{portrait "usa_pilot2"}
+	{nationality usa}
+	{icon "squad12"}
+	{icon_priority 1}
+	{field_icon "usa_pilot"}
+	{armors
+		
+	}
+	{perks
+		(include "perks_generic.inc")
+		("perk_t2")
+		{"medic" 10.0}
+	}
+	{veterancy
+		(include "veterancy_generic.inc")
+		("veterancy_1")
+	}
+	{inventory
+		{item "pistol_v1" filled}
+	}
+}
