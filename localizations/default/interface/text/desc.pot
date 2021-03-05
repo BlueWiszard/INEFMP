@@ -184,6 +184,98 @@ msgctxt "desc/squad/squad15(ger)"
 msgid "Elite Engineer Team"
 msgstr ""
 
+;/////////////////////////////////////////////////////////////
+;// LTU START ////////////////////////////////////////////////
+;/////////////////////////////////////////////////////////////
+
+msgctxt "desc/squad/squad1(ltu)"
+msgid "Žvalgai"
+msgstr ""
+
+msgctxt "desc/squad/squad1b_ltu"
+msgid "Žvalgai (Motorized)"
+msgstr ""
+
+msgctxt "desc/squad/squad2(ltu)"
+msgid "Pėstininkai"
+msgstr ""
+
+msgctxt "desc/squad/squad2b_ltu"
+msgid "Pėstininkai (Motorized)"
+msgstr ""
+
+msgctxt "desc/squad/squad3(ltu)"
+msgid "MG-Trupp"
+msgstr ""
+
+msgctxt "desc/squad/squad3b_ltu"
+msgid "MG-Trupp (Motorized)"
+msgstr ""
+
+msgctxt "desc/squad/squad4(ltu)"
+msgid "Mechanizuotieji Pėstininkai"
+msgstr ""
+
+msgctxt "desc/squad/squad4b_ltu"
+msgid "Mechanizuotieji Pėstininkai (Motorized)"
+msgstr ""
+
+msgctxt "desc/squad/squad5(ltu)"
+msgid "Desantininkai"
+msgstr ""
+
+msgctxt "desc/squad/squad5b_ltu"
+msgid "Desantininkai (Motorized)"
+msgstr ""
+
+msgctxt "desc/squad/squad6(ltu)"
+msgid "LITHSOF"
+msgstr ""
+
+msgctxt "desc/squad/squad6b_ltu"
+msgid "LITHSOF (Motorized)"
+msgstr ""
+
+msgctxt "desc/squad/squad12(ltu)"
+msgid "Tank Crew Team"
+msgstr ""
+
+msgctxt "desc/squad/squad11(ltu)"
+msgid "Engineer Team"
+msgstr ""
+
+msgctxt "desc/squad/squad7(ltu)"
+msgid "Support Team"
+msgstr ""
+
+msgctxt "desc/squad/squad8(ltu)"
+msgid "Fire Team"
+msgstr ""
+
+msgctxt "desc/squad/squad9(ltu)"
+msgid "AT Team"
+msgstr ""
+
+msgctxt "desc/squad/squad10(ltu)"
+msgid "Sniper Team"
+msgstr ""
+
+msgctxt "desc/squad/squad13(ltu)"
+msgid "Scout Team"
+msgstr ""
+
+msgctxt "desc/squad/squad14(ltu)"
+msgid "Elite Marksmen Team"
+msgstr ""
+
+msgctxt "desc/squad/squad15(ltu)"
+msgid "Elite Engineer Team"
+msgstr ""
+
+;/////////////////////////////////////////////////////////////
+;// LTU END //////////////////////////////////////////////////
+;/////////////////////////////////////////////////////////////
+
 msgctxt "desc/squad/squad4b_reb"
 msgid "Stormtroopers (Motorized)"
 msgstr ""
