@@ -273,6 +273,90 @@ msgid "Elite Engineer Team"
 msgstr ""
 
 ;/////////////////////////////////////////////////////////////
+;// LTU UNIT NAMES ///////////////////////////////////////////
+;/////////////////////////////////////////////////////////////
+
+msgctxt "desc/human/mp/ltu/tx_pilot_02"
+msgid "Lithuanian Pilot"
+msgstr ""
+
+msgctxt "desc/human/mp/ltu/t5_01"
+msgid "LITHSOF Operator"
+msgstr ""
+
+msgctxt "desc/human/mp/ltu/t5_02"
+msgid "LITHSOF Operator"
+msgstr ""
+
+msgctxt "desc/human/mp/ltu/t5_03"
+msgid "LITHSOF Operator"
+msgstr ""
+
+msgctxt "desc/human/mp/ltu/t5_sq"
+msgid "LITHSOF Squad Leader"
+msgstr ""
+
+msgctxt "desc/human/mp/ltu/t2_01"
+msgid "Lithuanian Infantryman"
+msgstr ""
+
+msgctxt "desc/human/mp/ltu/t2_02"
+msgid "Lithuanian Infantryman"
+msgstr ""
+
+msgctxt "desc/human/mp/ltu/t2_03"
+msgid "Lithuanian Infantryman"
+msgstr ""
+
+msgctxt "desc/human/mp/ltu/t2_04"
+msgid "Lithuanian Infantryman"
+msgstr ""
+
+msgctxt "desc/human/mp/ltu/t2_05"
+msgid "Lithuanian Infantryman"
+msgstr ""
+
+msgctxt "desc/human/mp/ltu/t2_06"
+msgid "Lithuanian Infantryman"
+msgstr ""
+
+msgctxt "desc/human/mp/ltu/t2_07"
+msgid "Lithuanian Infantryman"
+msgstr ""
+
+msgctxt "desc/human/mp/ltu/t2_sq"
+msgid "Lithuanian Infantry Squad Leader"
+msgstr ""
+
+msgctxt "desc/human/mp/ltu/t2_medic"
+msgid "Lithuanian Infantry Medic"
+msgstr ""
+
+msgctxt "desc/human/mp/ltu/t2_sq"
+msgid "Lithuanian Infantry Squad Leader"
+msgstr ""
+
+msgctxt "desc/human/mp/ltu/t2b_01"
+msgid "Lithuanian Elite Marksman"
+msgstr ""
+
+msgctxt "desc/human/mp/ltu/t2b_02"
+msgid "Lithuanian Elite Marksman"
+msgstr ""
+
+msgctxt "desc/human/mp/ltu/th_mg"
+msgid "Lithuanian Machinegunner"
+msgstr ""
+
+msgctxt "desc/human/mp/ltu/th_marksman"
+msgid "Lithuanian Marksman"
+msgstr ""
+
+msgctxt "desc/human/mp/ltu/tx_at_01"
+msgid "Lithuanian AT Infantryman"
+msgstr ""
+
+;/////////////////////////////////////////////////////////////
 ;// LTU END //////////////////////////////////////////////////
 ;/////////////////////////////////////////////////////////////
 
