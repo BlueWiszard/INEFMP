@@ -229,11 +229,11 @@ msgid "Desantininkai (Motorized)"
 msgstr ""
 
 msgctxt "desc/squad/squad6(ltu)"
-msgid "LITHSOF"
+msgid "LITHSOF Squad"
 msgstr ""
 
 msgctxt "desc/squad/squad6b_ltu"
-msgid "LITHSOF (Motorized)"
+msgid "LITHSOF Squad (Motorized)"
 msgstr ""
 
 msgctxt "desc/squad/squad12(ltu)"

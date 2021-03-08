@@ -2,12 +2,11 @@
 
 ;���Button Infantry���
 
-{"squad1b_ger"        	("v3" cd(0) ci(0) v(zetros)		t(combined_arms mechanized conquest) 	s(ltu) c1(t2_02:2) c2(t2_03:2) c3(t2_sq:1) g(a1) b(s1))								{level 1} {research_stage 4} {cost 0} {squad_cost_factor 1}}
-{"squad2b_ger"        	("v4" cd(0) ci(0) v(zetros)		t(combined_arms mechanized conquest) 	s(ltu) c1(t2_01:1) c2(t2_02:1) c3(t2_04:2) c4(t2_sq:1) g(a2) b(s1))					{level 1} {research_stage 4} {cost 0} {squad_cost_factor 1}}
-{"squad3b_ger"        	("v4" cd(0) ci(0) v(zetros)		t(combined_arms mechanized conquest) 	s(ltu) c1(t2_07:2) c2(t2_05:1) c3(t2_medic:1) c4(t2_sq:1) g(a3) b(s1))				{level 1} {research_stage 4} {cost 0} {squad_cost_factor 1}}
+{"squad1b_ltu"        	("v3" cd(0) ci(0) v(zetros)		t(combined_arms mechanized conquest) 	s(ltu) c1(t2_02:3) c2(t2_sq:1) g(a1) b(s1))								{level 1} {research_stage 4} {cost 0} {squad_cost_factor 1}}
+{"squad2b_ltu"        	("v4" cd(0) ci(0) v(zetros)		t(combined_arms mechanized conquest) 	s(ltu) c1(t2_02:2) c2(th_mg:1) c3(tx_at_01:1) c4(t2_sq:1) g(a2) b(s1))					{level 1} {research_stage 4} {cost 0} {squad_cost_factor 1}}
 
-{"squad4b_ger"       	("v5" cd(0) ci(0) v(zetros)		t(combined_arms mechanized conquest) 	s(ltu) c1(t3_01:1) c2(t3_02:1) c3(t3_03:1) c4(t3_medic:1) c5(t3_sq:1) g(a4) b(s1))	{level 2} {research_stage 5} {cost 0} {squad_cost_factor 1}}
-{"squad6b_ger"        	("v4" cd(0) ci(0) v(zetros)		t(combined_arms mechanized conquest) 	s(ltu) c1(t5_01:1) c2(t5_02:2) c3(t5_03:1) c4(t5_sq:1) g(a6) b(s1))					{level 6} {research_stage 7} {cost 0} {squad_cost_factor 1}}
+{"squad4b_ltu"       	("v5" cd(0) ci(0) v(zetros)		t(combined_arms mechanized conquest) 	s(ltu) c1(t6_01:1) c2(t6_02:1) c3(t6_03:1) c4(t6_04:1) c5(t2_sq:1) g(a4) b(s1))	{level 2} {research_stage 5} {cost 0} {squad_cost_factor 1}}
+{"squad6b_ltu"        	("v4" cd(0) ci(0) v(zetros)		t(combined_arms mechanized conquest) 	s(ltu) c1(t5_01:1) c2(t5_02:2) c3(t5_03:1) c4(t5_sq:1) g(a6) b(s1))					{level 6} {research_stage 7} {cost 0} {squad_cost_factor 1}}
 
 
 ;���Button 1���

@@ -316,7 +316,7 @@
 
 ;// LTU
 
-("squad_with5types" side(ltu) name(squad4) cd(0) ci(0) g(a1) c1(t6_01:1) c2(t6_02:1) c3(t6_03:1) c4(t6_04:1) c5(t2_sq:1) b(s1) t(all infantry combined_arms conquest)					level(1) research_stage(1) cost(0) scf(1))
+("squad_with5types" side(ltu) name(squad4) cd(0) ci(0) g(a1) c1(t6_01:1) c2(t6_02:1) c3(t6_03:1) c4(t6_04:1) c5(t6_sq:1) b(s1) t(all infantry combined_arms conquest)					level(1) research_stage(1) cost(0) scf(1))
 ("squad_with2types" side(ltu) name(squad1) cd(0) ci(0) g(a1) c1(t2_02:3) c2(t2_sq:1) b(s1) t(all infantry combined_arms conquest)					level(1) research_stage(1) cost(0) scf(1))
 ("squad_with4types" side(ltu) name(squad2) cd(0) ci(0) g(a2) c1(t2_02:2) c2(th_mg:1) c3(tx_at_01:1) c4(t2_sq:1) b(s1) t(all infantry combined_arms conquest)		level(1) research_stage(1) cost(0) scf(1))
 ("squad_with5types" side(ltu) name(squad3) cd(0) ci(0) g(a2) c1(t2_02:3) c2(th_mg:2) c3(tx_at_01:2) c4(t2_sq:1) c5(th_marksman:1) b(s1) t(all infantry combined_arms conquest)		level(1) research_stage(1) cost(0) scf(1))
