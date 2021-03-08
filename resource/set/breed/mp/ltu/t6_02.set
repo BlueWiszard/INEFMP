@@ -1,0 +1,24 @@
+{breed
+	{skin "uaf_t2_2"}
+	{portrait "uaf_t2"}
+	{nationality ltu}
+	{icon "squad2"}
+	{icon_priority 2}
+	{armors
+		
+	}
+	{perks
+		(include "perks_generic.inc")
+		("perk_t2")
+	}
+	{veterancy
+		(include "veterancy_generic.inc")
+		("veterancy_1")
+	}
+	{inventory
+		{item "g36a2_v1" filled}
+		{item "knife_v1b" 1}
+		{item "bandage" 3}
+		{in_hands 0}
+	}
+}

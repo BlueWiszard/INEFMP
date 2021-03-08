@@ -213,11 +213,11 @@ msgid "Pėstininkų Būrys (Motorized)"
 msgstr ""
 
 msgctxt "desc/squad/squad4(ltu)"
-msgid "Mechanizuotieji Pėstininkai"
+msgid "Šaulių Sąjungos Būrys"
 msgstr ""
 
 msgctxt "desc/squad/squad4b_ltu"
-msgid "Mechanizuotieji Pėstininkai (Motorized)"
+msgid "Šaulių Sąjungos Būrys (Motorized)"
 msgstr ""
 
 msgctxt "desc/squad/squad5(ltu)"
@@ -354,6 +354,34 @@ msgstr ""
 
 msgctxt "desc/human/mp/ltu/tx_at_01"
 msgid "Lithuanian AT Infantryman"
+msgstr ""
+
+msgctxt "desc/human/mp/ltu/t6_01"
+msgid "Lithuanian Rifleman"
+msgstr ""
+
+msgctxt "desc/human/mp/ltu/t6_02"
+msgid "Lithuanian Rifleman"
+msgstr ""
+
+msgctxt "desc/human/mp/ltu/t6_03"
+msgid "Lithuanian Rifleman"
+msgstr ""
+
+msgctxt "desc/human/mp/ltu/t6_04"
+msgid "Lithuanian Rifleman"
+msgstr ""
+
+msgctxt "desc/human/mp/ltu/t6_05"
+msgid "Lithuanian Rifleman"
+msgstr ""
+
+msgctxt "desc/human/mp/ltu/t6_medic"
+msgid "Lithuanian Riflemen Medic"
+msgstr ""
+
+msgctxt "desc/human/mp/ltu/t6_sq"
+msgid "Lithuanian Riflemen Squad Leader"
 msgstr ""
 
 ;/////////////////////////////////////////////////////////////
