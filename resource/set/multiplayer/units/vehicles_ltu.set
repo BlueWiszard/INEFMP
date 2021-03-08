@@ -1,17 +1,16 @@
 ;----- LTU -----
 
-;°°°Button Infantry°°°
+;ï¿½ï¿½ï¿½Button Infantryï¿½ï¿½ï¿½
 
 {"squad1b_ger"        	("v3" cd(0) ci(0) v(zetros)		t(combined_arms mechanized conquest) 	s(ltu) c1(t2_02:2) c2(t2_03:2) c3(t2_sq:1) g(a1) b(s1))								{level 1} {research_stage 4} {cost 0} {squad_cost_factor 1}}
 {"squad2b_ger"        	("v4" cd(0) ci(0) v(zetros)		t(combined_arms mechanized conquest) 	s(ltu) c1(t2_01:1) c2(t2_02:1) c3(t2_04:2) c4(t2_sq:1) g(a2) b(s1))					{level 1} {research_stage 4} {cost 0} {squad_cost_factor 1}}
 {"squad3b_ger"        	("v4" cd(0) ci(0) v(zetros)		t(combined_arms mechanized conquest) 	s(ltu) c1(t2_07:2) c2(t2_05:1) c3(t2_medic:1) c4(t2_sq:1) g(a3) b(s1))				{level 1} {research_stage 4} {cost 0} {squad_cost_factor 1}}
 
 {"squad4b_ger"       	("v5" cd(0) ci(0) v(zetros)		t(combined_arms mechanized conquest) 	s(ltu) c1(t3_01:1) c2(t3_02:1) c3(t3_03:1) c4(t3_medic:1) c5(t3_sq:1) g(a4) b(s1))	{level 2} {research_stage 5} {cost 0} {squad_cost_factor 1}}
-{"squad5b_ger"        	("v4" cd(0) ci(0) v(zetros)		t(combined_arms mechanized conquest) 	s(ltu) c1(t4_01:2) c2(t4_02:1) c3(t4_03:1) c4(t4_sq:1) g(a5) b(s1))					{level 4} {research_stage 6} {cost 0} {squad_cost_factor 1}}
 {"squad6b_ger"        	("v4" cd(0) ci(0) v(zetros)		t(combined_arms mechanized conquest) 	s(ltu) c1(t5_01:1) c2(t5_02:2) c3(t5_03:1) c4(t5_sq:1) g(a6) b(s1))					{level 6} {research_stage 7} {cost 0} {squad_cost_factor 1}}
 
 
-;°°°Button 1°°°
+;ï¿½ï¿½ï¿½Button 1ï¿½ï¿½ï¿½
 
 {"m252_mortar_ger"		("vs" cd(300) ci(150) t(all artillery combined_arms conquest) 					s(ltu) n1(2) g(av1) sc(0.05) b(v1) cw(2) cp(6))		{level 1} {cost 450} {squad_cost_factor 1}}
 {"zetros"      			("vs" cd(300) ci(300) t(all armor light armored_warfare combined_arms conquest) s(ltu) n1(2) g(av2) sc(0.05) b(v1) cw(0) cp(1))		{level 1} {cost 50} {squad_cost_factor 1}}
@@ -19,31 +18,31 @@
 {"pzh2000"      		("v"  cd(600) ci(300) t(all artillery armored_warfare combined_arms conquest) 	s(ltu) n1(5) g(av5) sc(0.05) b(v1) cw(0) cp(12))	{level 1} {research_stage 6} {cost 675} {squad_cost_factor 1}}
 
 
-;°°°Button 2°°°
+;ï¿½ï¿½ï¿½Button 2ï¿½ï¿½ï¿½
 
 {"matv_m2hb"			("vs" cd(90) ci(90) t(all light armor armored_warfare combined_arms conquest)	s(ltu) n1(4) g(bv1) sc(0.05) b(v2) cw(0) cp(2.5)) 	{level 1} {research_stage 2} {cost 250} {squad_cost_factor 1}}
 {"humvee_lmg_uaf"      	("vs" cd(90) ci(90) t(all light armor armored_warfare combined_arms conquest) 	s(ltu) n1(5) g(bv1) sc(0.05) b(v2) cw(0) cp(0))		{level 1} {research_stage 1} {cost 75} {squad_cost_factor 1}}
 {"gtk_boxer_gmw"		("v" cd(300) ci(150) t(all medium armor armored_warfare combined_arms conquest) s(ltu) n1(3) g(bv5) sc(0.05) b(v2) cw(5) cp(12))	{level 5} {research_stage 5} {cost 625} {squad_cost_factor 1}}
 
 
-;°°°Button 3°°°
+;ï¿½ï¿½ï¿½Button 3ï¿½ï¿½ï¿½
 
 
-;°°°Button 4°°°
+;ï¿½ï¿½ï¿½Button 4ï¿½ï¿½ï¿½
 
 {"uh-60m_blackhawk"		("v5" cd(300) ci(150) v(uh-60m_blackhawk)		t(airborne combined_arms conquest)	s(ltu) c1(tx_pilot_01:2) c2(t5_01:1) c3(t5_02:2) c4(t5_03:1) c5(t5_sq:1) g(dv1) b(v3)) 	{score_factor 0.05} {level 18} {research_stage 6} {cost 150} {squad_cost_factor 1}}
 {"mil_mi17"				("v5" cd(300) ci(150) v(mil_mi17)		t(airborne combined_arms conquest)		s(ltu) c1(tx_pilot_01:2) c2(t5_01:2) c3(t5_02:2) c4(t5_03:1) c5(t5_sq:1) g(dv1) b(v3))	{score_factor 0.05} {level 6} {research_stage 4} {cost 150} {squad_cost_factor 1}}
 
-;°°°Emplacements°°°
+;ï¿½ï¿½ï¿½Emplacementsï¿½ï¿½ï¿½
 
 {"heavy_mg_mg3_sandbags"	("ve" cd(0)		ci(0) t(all artillery combined_arms conquest)	condition(barricade) action(heavy_mg_mg3)		s(ltu) n1(0) g(ev1) sc(0.05) b(v1) cw(0) cp(0))	{level 1} {cost 200} {squad_cost_factor 1}}
 {"milan_er"					("ve" cd(150)	ci(0) t(all artillery combined_arms conquest)	condition(barricade) action(milan_er)			s(ltu) n1(0) g(ev2) sc(0.05) b(v1) cw(0) cp(0))	{level 4} {cost 300} {squad_cost_factor 1}}
 {"2b11_mortar"				("ve" cd(300)	ci(0) t(all artillery combined_arms conquest)	condition(barricade) action(2b11_mortar)		s(ltu) n1(0) g(ev3) sc(0.05) b(v1) cw(0) cp(0))	{level 6} {cost 400} {squad_cost_factor 1}}
 
 
-;°°°Specials°°°
+;ï¿½ï¿½ï¿½Specialsï¿½ï¿½ï¿½
 {"airstrike_bomb_ger"	("va"	cd(900) ci(300) v(tornado_ids)		t(conquest hero)			s(ltu) n1(1) g(cv3) sc(0.05) b(hero) cw(0) cp(2.5))	{cost 5.0} {action "airstrike:airstrike_bomb"} }
 
 
-;°°°No Button°°°
+;ï¿½ï¿½ï¿½No Buttonï¿½ï¿½ï¿½
 {"tornado_ids"			{tags "all ger"}	{score 0}	{cw 0}	{cp 0}	{cost 0} {not_for_sale 1}}

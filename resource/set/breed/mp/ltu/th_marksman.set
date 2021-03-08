@@ -18,7 +18,7 @@
 		("veterancy_1")
 	}
 	{inventory
-		{item "fn_scar_v3" filled}
+		{item "m39emr_v1" filled}
 		{item "pistol_v3c" filled}
 		{item "grenade dm51" 1}
 		{item "knife_v1c" 1}

@@ -319,10 +319,8 @@
 ("squad_with2types" side(ltu) name(squad1) cd(0) ci(0) g(a1) c1(t2_02:3) c2(t2_sq:1) b(s1) t(all infantry combined_arms conquest)					level(1) research_stage(1) cost(0) scf(1))
 ("squad_with4types" side(ltu) name(squad2) cd(0) ci(0) g(a2) c1(t2_02:2) c2(th_mg:1) c3(tx_at_01:1) c4(t2_sq:1) b(s1) t(all infantry combined_arms conquest)		level(1) research_stage(1) cost(0) scf(1))
 ("squad_with5types" side(ltu) name(squad3) cd(0) ci(0) g(a2) c1(t2_02:3) c2(th_mg:2) c3(tx_at_01:2) c4(t2_sq:1) c5(th_marksman:1) b(s1) t(all infantry combined_arms conquest)		level(1) research_stage(1) cost(500) scf(1))
-;// Machinegun Squad("squad_with4types" side(ltu) name(squad3) cd(0) ci(0) g(a3) c1(t2_07:2) c2(t2_05:1) c3(t2_medic:1) c4(t2_sq:1) b(s1) t(all infantry combined_arms conquest)	level(1) research_stage(1) cost(0) scf(1))
 
 ("squad_with5types" side(ltu) name(squad4) cd(0) ci(30) g(a4) c1(t3_01:1) c2(t3_02:1) c3(t3_03:1) c4(t3_medic:1) c5(t3_sq:1) b(s1) t(all infantry combined_arms conquest)	level(2) research_stage(2) cost(0) scf(1))
-("squad_with4types" side(ltu) name(squad5) cd(0) ci(30) g(a5) c1(t4_01:2) c2(t4_02:1) c3(t4_03:1) c4(t4_sq:1) b(s1) t(all infantry combined_arms conquest)					level(4) research_stage(3) cost(0) scf(1))
 ("squad_with4types" side(ltu) name(squad6) cd(0) ci(30) g(a6) c1(t5_01:1) c2(t5_02:2) c3(t5_03:1) c4(t5_sq:1) b(s1) t(all infantry combined_arms conquest)					level(6) research_stage(4) cost(0) scf(1))
 
 ("squad_with1types" side(ltu) name(squad12) cd(300) ci(30) g(b1) c1(tx_tankman_01:2) b(s2) t(all infantry armored_warfare combined_arms conquest)	level(1) research_stage(1) cost(0) scf(1))
