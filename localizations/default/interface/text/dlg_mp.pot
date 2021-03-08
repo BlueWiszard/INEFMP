@@ -1153,11 +1153,11 @@ msgid "Only with open slots"
 msgstr ""
 
 msgctxt "mp/alliance/nato"
-msgid "COALITION"
+msgid "BLUFOR"
 msgstr ""
 
 msgctxt "mp/alliance/opfor"
-msgid "RESISTANCE"
+msgid "OPFOR"
 msgstr ""
 
 msgctxt "mp/lobby/button/filter"
