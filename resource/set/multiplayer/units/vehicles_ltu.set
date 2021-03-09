@@ -5,8 +5,6 @@
 {"squad1b_ltu"        	("v3" cd(0) ci(0) v(zetros)		t(combined_arms mechanized conquest) 	s(ltu) c1(t2_02:3) c2(t2_sq:1) g(a1) b(s1))								{level 1} {research_stage 4} {cost 0} {squad_cost_factor 1}}
 {"squad2b_ltu"        	("v4" cd(0) ci(0) v(zetros)		t(combined_arms mechanized conquest) 	s(ltu) c1(t2_02:2) c2(th_mg:1) c3(tx_at_01:1) c4(t2_sq:1) g(a2) b(s1))					{level 1} {research_stage 4} {cost 0} {squad_cost_factor 1}}
 {"squad3b_ltu"        	("v4" cd(0) ci(0) v(zetros)		t(combined_arms mechanized conquest) 	s(ltu) c1(t2_02:3) c2(th_mg:2) c3(tx_at_01:2) c4(t2_sq:1) c5(th_marksman:1) g(a2) b(s1))					{level 1} {research_stage 4} {cost 0} {squad_cost_factor 1}}
-
-{"squad4b_ltu"       	("v5" cd(0) ci(0) v(zetros)		t(combined_arms mechanized conquest) 	s(ltu) c1(t6_01:1) c2(t6_02:1) c3(t6_03:1) c4(t6_04:1) c5(t2_sq:1) g(a4) b(s1))	{level 2} {research_stage 5} {cost 0} {squad_cost_factor 1}}
 {"squad6b_ltu"        	("v4" cd(0) ci(0) v(zetros)		t(combined_arms mechanized conquest) 	s(ltu) c1(t5_01:1) c2(t5_02:2) c3(t5_03:1) c4(t5_sq:1) g(a6) b(s1))					{level 6} {research_stage 7} {cost 0} {squad_cost_factor 1}}
 
 
@@ -15,7 +13,7 @@
 {"m252_mortar_ger"		("vs" cd(300) ci(150) t(all artillery combined_arms conquest) 					s(ltu) n1(2) g(av1) sc(0.05) b(v1) cw(2) cp(6))		{level 1} {cost 450} {squad_cost_factor 1}}
 {"zetros"      			("vs" cd(300) ci(300) t(all armor light armored_warfare combined_arms conquest) s(ltu) n1(2) g(av2) sc(0.05) b(v1) cw(0) cp(1))		{level 1} {cost 50} {squad_cost_factor 1}}
 {"zetros_ammo"      	("vs" cd(300) ci(300) t(all armor light armored_warfare combined_arms conquest) s(ltu) n1(2) g(av3) sc(0.05) b(v1) cw(0) cp(1))		{level 1} {cost 200} {squad_cost_factor 1}}
-{"pzh2000"      		("v"  cd(600) ci(300) t(all artillery armored_warfare combined_arms conquest) 	s(ltu) n1(5) g(av5) sc(0.05) b(v1) cw(0) cp(12))	{level 1} {research_stage 6} {cost 675} {squad_cost_factor 1}}
+{"pzh2000_ltu"      		("v"  cd(600) ci(300) t(all artillery armored_warfare combined_arms conquest) 	s(ltu) n1(5) g(av5) sc(0.05) b(v1) cw(0) cp(12))	{level 1} {research_stage 6} {cost 675} {squad_cost_factor 1}}
 
 
 ;���Button 2���

@@ -1,0 +1,8 @@
+{material bump
+	{diffuse "$/vehicle4/pzh2000_ltu_dif"}
+	{bump "$/vehicle4/pzh2000_ltu_nm"}
+	{specular "$/vehicle4/pzh2000_ltu_sp"}
+	{color "255 255 255 25"}
+	{blend none}
+	{emitsheat}
+}

@@ -4140,6 +4140,10 @@ msgctxt "desc/entity/pzh2000"
 msgid "PzH 2000A1"
 msgstr ""
 
+msgctxt "desc/entity/pzh2000_ltu"
+msgid "PzH 2000A1"
+msgstr ""
+
 msgctxt "desc/weapon/155mm_l52"
 msgid "155mm L52"
 msgstr ""

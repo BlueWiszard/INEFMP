@@ -1,0 +1,107 @@
+{game_entity
+	(include "/properties/armoredcar_tracks.ext")
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "turret" "turret_rotator" "vision_vehicle_high" "muzzle_large" "self_propelled" "artillery"}
+	{targetclass "armoredcar" "fg bullet"}
+
+	{extender "enumerator"}
+
+	("armor_btr")
+
+	;volume, component/tag, thickness, front
+	("adjust_volume" args "body1" "body" 15 15)
+	("adjust_volume" args "body2" "body" 15 15)
+	("adjust_volume" args "turret" "turret" 15 15)
+	("adjust_volume" args "engine" "engine" 15 15)
+	
+	{component "turret"
+		{RepairTime 20}
+	}
+
+	;Crew: Driver, Commander, Gunner, Gunner2, Charger
+	("crew_4_invisible")
+	("crew_gunner_open")
+
+	{placer
+		{place "driver"		{visor "driver"}}
+		{place "gunner"		{visor "main"}}
+		{place "gunner2"	{visor "mgun"}{sealable}}
+	}
+	
+	{sensor
+		{visor "mgun"
+			{vision "human"}
+		}
+	}
+
+	{extender "smokescreen"
+		{cooldown 120}
+	}
+
+	{extender "vision_mode"
+		{timer_object
+			{tag			"night"}
+			{active_time	30}
+			{recharge_rate	0.5}
+			{type			"recharge"}
+		}
+	}
+
+	{extender "inventory"
+		{box
+			{item "ammo bullet155 fg" 54}		;a total of 60 rounds (1 already loaded)
+			{item "ammo bullet155 sm" 5}
+			{item "ammo 7x51" 1100}				;a total of 1200 rounds (100 already loaded)
+			{item "grenade decoy" 1}
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon			"155mm_l52" filling "ammo bullet155 fg" 1}
+			("abm_medium")
+		}
+		{place "mgun"
+			{weapon 		"mg3_v1b" filled}
+			{gunner			"gunner2"}
+			{charger		"gunner2"}
+			{LinkBone		"mgun_help"}
+			{LinkAnimation	"off"}
+			("abm_mgun")
+			{basic}
+			{ai_in_manual}
+		}
+	}
+
+	{mass 55800}
+	{Chassis
+		("tank_trace" fx("tracks_mid") step(0.4) len(0.5))
+		{Locomotion ("locomotion")
+			("Speed" s(62))
+		}
+		{FuelBag
+			{volume 1000}		;liters
+			("rate" r(2.38))	;liters per kilometer (adapted) // 420km range
+			{remain 1000}
+		}
+	}
+
+	{Extension "pzh2000_ltu.mdl"}
+	
+	{bone "turret"			;gun horizontal
+		{speed 0.01}
+	}
+	{bone "gun_rot"			;gun vertical
+		{speed 0.01}
+		{limits -2.5 65}	;min down to max up
+	}
+	{bone "turret_mgun"		;mgun horizontal
+		{speed 0.03}
+		{terminator}		;stop rotating beyond this bone
+	}
+	{bone "mgun_rot"		;mgun vertical
+		{speed 0.03}
+		{limits -10 50}		;min down to max up		- no original values available
+	}
+}
