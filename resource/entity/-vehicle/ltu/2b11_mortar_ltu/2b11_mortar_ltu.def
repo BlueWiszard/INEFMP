@@ -1,0 +1,81 @@
+{game_entity
+	(include "/properties/cannon.ext")
+	{collider "cannon_small"}
+	{props "cannon_small" "vision_cannon_low" "with_gun"}
+	{targetclass "cannon" "fg"}
+
+	("armor_mortar")
+	{mass 150}
+	
+	{component "gun"
+		{RepairTime 15}
+	}
+
+	;volume, component/tag, thickness
+	("volume_simple" args "body1" "body" 15)
+	("volume_simple" args "body2" "body" 15)
+	("volume_simple" args "gun1" "body" 15)
+	("volume_simple" args "gun2" "gun" 15)
+	("volume_simple" args "gun3" "gun" 15)
+	("volume_simple" args "gun4" "gun" 15)
+	("volume_simple" args "gun5" "gun" 15)
+	("volume_simple" args "gun6" "gun" 15)
+	("volume_simple" args "gun7" "gun" 15)
+
+	{Volume "bounds"
+		{able clear }
+	}
+
+	("board_mortar")
+	("crew_visible" place(gunner) door(emit1) animation(gunner) group(crew))
+	("crew_visible" place(commander) door(emit2) animation(commander) group(crew))
+
+	{sensor
+		{visor "commander"
+			{vision "cannon_crew"}
+			{bone "visor"}
+		}
+		{InformRange 200 250}
+	}
+
+	{extender "inventory"
+		{box
+			{item "ammo 120mm_2b11_mortar fg" 80}
+		}
+	}
+
+	{Weaponry
+		{place "gun"
+			{weapon "weapon 120mm_2b11_mortar" filling "ammo 120mm_2b11_mortar fg" 1}
+			{charger "gunner"}
+			{Rotate}
+			("abm_howitzer")
+		}
+	}
+
+	{extender "cannon"
+		{animation
+			{aim "" ""}
+			{fire  "Squat_load_mortar_end" ""}
+			{reload  "" ""}
+		}
+		{move {workers clear} {obstacle "close"}}
+		{attack {workers "gunner"} {obstacle "open"}}
+		{rotate_ik_Limit 0}
+	}
+
+	{Extension "2b11_mortar.mdl"}
+
+	{bone "turret"
+		{limits}
+		{speed 0.005}
+	}
+	{bone "foresight"
+		{limits -35 15}
+		{speed 0.025}
+	}
+
+	{extender "structure"
+		{place "sandbag_ring" "sandbag_ring"}
+	}
+}

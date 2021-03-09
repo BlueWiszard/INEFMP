@@ -1,0 +1,114 @@
+{actor
+	(include "/properties/helicopter.ext")
+	("armor_medium")
+
+	{Extender "enumerator"}
+
+	("crew_helicopter_passenger")
+	("seat_3-14_helicopter")
+
+	;volume, component/tag, thickness
+	("volume_simple" args "body1" "body" 15)
+	("volume_simple" args "body2" "body" 15)
+	("volume_simple" args "body3" "body" 15)
+	("volume_simple" args "body4" "body" 15)
+	("volume_simple" args "body5" "body" 15)
+	("volume_simple" args "body6" "body" 15)
+	("volume_simple" args "body7" "body" 15)
+	("volume_simple" args "body8" "body" 15)
+	("volume_simple" args "body10" "body" 15)
+	("volume_simple" args "body11" "body" 15)
+	("volume_simple" args "body12" "body" 15)
+	("volume_simple" args "body13" "body" 15)
+
+	;volume 0%, able {visible %1}
+	("volume_visibility" args "body1" 0)
+	("volume_visibility" args "body2" 0)
+	("volume_visibility" args "body3" 0)
+	("volume_visibility" args "body4" 0)
+	("volume_visibility" args "body5" 0)
+	("volume_visibility" args "body11" 0)
+
+	;volume/component, thickness
+	("glass" args "window1" 10)
+	("glass" args "window2" 10)
+	("glass" args "window3" 10)
+	("glass" args "window4" 10)
+	("glass" args "window5" 10)
+	("glass" args "window6" 10)
+	("glass" args "window7" 10)
+	("glass" args "window8" 10)
+	("glass" args "window9" 10)
+	("glass" args "window10" 10)
+	("glass" args "window11" 10)
+	("glass" args "window12" 10)
+	("glass" args "window13" 10)
+	("glass" args "window14" 10)
+	("glass" args "window15" 10)
+	("glass" args "window16" 10)
+	("glass" args "window17" 10)
+	("glass" args "window18" 10)
+	("glass" args "window19" 10)
+	("glass" args "window20" 10)
+	("glass" args "window21" 10)
+	("glass" args "window22" 10)
+
+	{Obstacle "in_air"
+		{Obb2
+			{Center -40 0}
+			{Extent 250 230}
+		}
+		{rotate}
+	}
+	{ObstacleId "helicopter" "in_air"}
+
+	{Extender "flare"
+		{Cooldown 10}
+		{Bones
+			{"flare_r" "flare_1" 10 0.5}
+			{"flare_l" "flare_1" 10 0.5}
+		}
+	}
+
+	{Extender "inventory"
+		{Box
+			{item "grenade flare" 10}
+		}
+	}
+
+	{Weaponry
+		{place "dummy"
+			{type			"dummy"}
+			{rotate}
+			{weapon			"dummy"}
+			{gunner			"driver"}
+			{charger		"driver"}
+			{basic}
+		}
+	}
+
+	{mass 7489}
+	{Chassis "helicopter"
+		{Locomotion ("locomotion_attack")}
+	}
+
+	;main rotor + blades
+	("part" args "rotor")
+	("part" args "propeller")
+	("part" args "propeller1")
+	("part" args "propeller2")
+	("part" args "propeller3")
+	("part" args "propeller4")
+
+	;back rotor + blades
+	("part" args "rotor_b")
+	("part" args "propeller_b")
+	("part" args "propeller_b1")
+	("part" args "propeller_b2")
+
+	("wheel" args "wheell")
+	("wheel" args "wheelr")
+	("wheel" args "wheelf")
+
+	{Extension "../../grm/mil_mi17/mil_mi17.mdl"}
+}

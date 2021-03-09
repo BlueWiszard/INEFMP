@@ -1,0 +1,8 @@
+{material bump
+	{diffuse "$/vehicle4/zetros_diffuse"}
+	{bump "$/vehicle4/zetros_normal"}
+	{specular "$/vehicle4/zetros_specular"}
+	{color "255 255 255 25"}
+	{blend none}
+	{emitsheat}
+}

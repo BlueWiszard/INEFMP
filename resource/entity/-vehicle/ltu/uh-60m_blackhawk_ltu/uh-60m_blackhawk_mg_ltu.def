@@ -1,0 +1,167 @@
+{actor
+	(include "/properties/helicopter.ext")
+	{targetclass "helicopter" "bullet"}
+	("armor_medium")
+
+	{extender "enumerator"}
+
+	("board_helicopter_sides")
+	("crew_2_visible")
+	("crew_visible" place(gunner1)		door(emit1) animation(left)				group(crew))
+	("crew_visible" place(gunner2)		door(emit2) animation(right)			group(crew))
+	("crew_visible" place(passenger3)	door(emit3) animation(passenger_right)	group(passenger))
+	("crew_visible" place(passenger4)	door(emit3) animation(passenger_right)	group(passenger))
+	("crew_visible" place(passenger5)	door(emit4) animation(passenger_left)	group(passenger))
+	("crew_visible" place(passenger6)	door(emit4) animation(passenger_left)	group(passenger))
+	("crew_visible" place(passenger7)	door(emit4) animation(passenger_left)	group(passenger))
+	("crew_visible" place(passenger8)	door(emit4) animation(passenger_left)	group(passenger))
+	("crew_visible" place(passenger9)	door(emit3) animation(passenger_right)	group(passenger))
+	("crew_visible" place(passenger10)	door(emit3) animation(passenger_right)	group(passenger))
+	("crew_visible" place(passenger11)	door(emit4) animation(passenger_left)	group(passenger))
+	("crew_visible" place(passenger12)	door(emit4) animation(passenger_left)	group(passenger))
+	("crew_visible" place(passenger13)	door(emit3) animation(passenger_right)	group(passenger))
+	("crew_visible" place(passenger14)	door(emit3) animation(passenger_right)	group(passenger))
+
+	{placer
+		{place "gunner1"	{visor "mgun1"}}
+		{place "gunner2"	{visor "mgun2"}}
+	}
+
+	{Sensor
+		{Visor "mgun1"
+			{vision "helicopter_mgun"}
+			{bone	"visor3"}
+		}
+		{Visor "mgun2"
+			{vision "helicopter_mgun"}
+			{bone	"visor2"}
+		}
+	}
+
+	;volume, component/tag, thickness
+	("volume_simple" args "body" "body" 15)
+	("volume_simple" args "body1" "body" 15)
+	("volume_simple" args "body2" "body" 15)
+	("volume_simple" args "body3" "body" 15)
+	("volume_simple" args "body4" "body" 15)
+
+	;volume 0%, able {visible %1}
+	("volume_visibility" args "body2" 0)
+	("volume_visibility" args "body3" 0)
+
+	;volume/component, thickness
+	("glass" args "window1" 10)
+	("glass" args "window2" 10)
+	("glass" args "window3" 10)
+	("glass" args "window4" 10)
+	("glass" args "window5" 10)
+	("glass" args "window6" 10)
+	("glass" args "window7" 10)
+	("glass" args "window8" 10)
+	("glass" args "window9" 10)
+	("glass" args "window10" 10)
+	("glass" args "window11" 10)
+	("glass" args "window12" 10)
+	("glass" args "window13" 10)
+	("glass" args "window14" 10)
+	("glass" args "window15" 10)
+	("glass" args "window16" 10)
+	("glass" args "window17" 10)
+
+	{Obstacle "in_air"
+		{Obb2
+			{Center -10 0}
+			{Extent 200 180}
+		}
+		{rotate}
+	}
+	{ObstacleId "helicopter" "in_air"}
+
+	{extender "flare"
+		{cooldown 10}
+		{bones
+			{"flare_r" "flare_1" 10 0.5}
+			{"flare_l" "flare_1" 10 0.5}
+		}
+	}
+
+	{extender "inventory"
+		{Box
+			{item "grenade flare" 10}
+			{item "ammo 7x51" 4000}
+		}
+	}
+
+	{Weaponry
+		{place "dummy"
+			{type			"dummy"}
+			{rotate}
+			{weapon			"dummy"}
+			{gunner			"driver"}
+			{charger		"driver"}
+			{basic}
+		}
+		{place "mgun1"
+			{gunner			"gunner1"}
+			{charger		"gunner1"}
+			{LinkBone		"mgun1"}
+			{LinkAnimation	"off"}
+			{weapon			"m134d_v1" filled}
+			;("abm_mgun")
+			{basic}
+			{ai_in_manual}
+		}
+		{place "mgun2"
+			{gunner			"gunner2"}
+			{charger		"gunner2"}
+			{LinkBone		"mgun2"}
+			{LinkAnimation	"off"}
+			{weapon			"m134d_v1" filled}
+			;("abm_mgun")
+			{basic}
+			{ai_in_manual}
+		}
+	}
+
+	{mass 4819}
+	{Chassis "helicopter"
+		{Locomotion ("locomotion_transport")}
+	}
+
+	;main rotor + blades
+	("part" args "rotor")
+	("part" args "propeller")
+	("part" args "propeller1")
+	("part" args "propeller2")
+	("part" args "propeller3")
+
+	;back rotor + blades
+	("part" args "rotor_b")
+	("part" args "propeller_b")
+	("part" args "propeller_b1")
+	("part" args "propeller_b2")
+	("part" args "propeller_b3")
+
+	("wheel" args "wheell")
+	("wheel" args "wheelr")
+	("wheel" args "wheelb")
+
+	{Extension "../../usa/uh-60m_blackhawk/uh-60m_blackhawk_mg.mdl"}
+
+	{bone "turret_mgun1"		;mgun left: right/left
+		{speed 0.05}
+		{limits -70 70}
+	}
+	{bone "mgun_rot1"			;mgun left: up/down
+		{speed 0.05}
+		{limits -50 50}
+	}
+	{bone "turret_mgun2"		;mgun right: right/left
+		{speed 0.05}
+		{limits -70 70}
+	}
+	{bone "mgun_rot2"			;mgun right: up/down
+		{speed 0.05}
+		{limits -50 50}
+	}
+}

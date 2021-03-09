@@ -1,0 +1,8 @@
+{material bump
+	{diffuse "$/vehicle4/zetros_crate2"}
+	{bump "$/vehicle2/fmtv_crate2_bp"}
+	{specular "$/vehicle2/fmtv_crate2_sp"}
+	{color "255 255 255 25"}
+	{blend none}
+	{emitsheat}
+}

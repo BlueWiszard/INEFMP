@@ -1,0 +1,73 @@
+{game_entity
+	(include "/properties/cannon.ext")
+	{collider "cannon_small"}
+	{props "cannon_small" "vision_cannon_low"}
+	{targetclass "cannon" "fg"}
+	{patherId "cannon.carried"}
+	("armor_mortar")
+
+	;volume, component/tag, thickness
+	("volume_simple" args "body" "body" 15)
+	("volume_simple" args "body2" "body" 15)
+	("volume_simple" args "gun" "body" 15)
+
+	{Volume "gun"
+		{able {Contact 1}}
+	}
+
+	("crew_mortar")
+
+	{placer
+		{place "driver1" {visor "commander"}}
+		{place "driver2" {visor "commander"}}
+	}
+
+	{sensor
+		{visor "commander"
+			{vision "cannon_crew"}
+			{bone "visor"}
+		}
+		{InformRange 200 250}
+	}
+
+	{extender "inventory"
+		{box
+			{item "ammo 81mm_mortar fg" 120}
+		}
+	}
+
+	{Weaponry
+		{place "gun"
+			{weapon "weapon 81mm_mortar" filling "ammo 81mm_mortar fg" 1}
+			{Rotate}
+			("abm_howitzer")
+		}
+	}
+
+	{extender "cannon"
+		{animation
+			{switch "close"}
+			{move "mortar_driver_r" "mortar_driver_l"}
+			{aim "" ""}
+			{fire  "Squat_load_mortar_end" ""}
+			{reload  "" ""}
+		}
+		{move {obstacle "close"}}
+		{attack {obstacle "open"}}
+		{rotate_ik_Limit 0}
+	}
+
+	{mass 150}
+	{Chassis "human_carrier"
+		{carrierPlace "driver1" "driver2"}
+		{carrierBone  "handle1" "handle2"}
+		("loco_carrier")
+	}
+
+	{Extension "../../usa/m252_mortar/m252_mortar.mdl"}
+
+	{bone "turret"
+		{limits -30 30}
+		{speed 0.005}
+	}
+}

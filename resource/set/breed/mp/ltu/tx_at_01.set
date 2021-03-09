@@ -19,11 +19,8 @@
 	}
 	{inventory
 		{item "g36a2_v1" filled}
-		{item "panzerfaust_v1" filled}
-		{item "panzerfaust_v1" filled}
-		{item "panzerfaust_v1" filled}
-		{item "panzerfaust_v1" filled}
-		{item "panzerfaust_v1" filled}
+		{item "at4cs_v1" filled}
+		{item "at4cs_v1" filled}
 		{item "grenade dm51" 2}
 		{item "grenade anm8" 1}
 		{item "bandage" 5}

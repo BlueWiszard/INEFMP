@@ -516,6 +516,10 @@ msgctxt "desc/entity/mil_mi17_reb"
 msgid "Mil Mi-17"
 msgstr ""
 
+msgctxt "desc/entity/mil_mi17_ltu"
+msgid "Mil Mi-17"
+msgstr ""
+
 msgctxt "desc/entity/mil_mi17_uaf"
 msgid "Mil Mi-17"
 msgstr ""
@@ -1824,6 +1828,10 @@ msgctxt "desc/entity/zetros_ammo"
 msgid "Zetros Ammo"
 msgstr ""
 
+msgctxt "desc/entity/zetros_ammo_ltu"
+msgid "Zetros Ammo"
+msgstr ""
+
 msgctxt "desc/weapon/mg4_v1"
 msgid "MG4"
 msgstr ""
@@ -2596,6 +2604,10 @@ msgctxt "desc/entity/uh-60m_blackhawk_mg"
 msgid "UH-60 Black Hawk Heavy"
 msgstr ""
 
+msgctxt "desc/entity/uh-60m_blackhawk_mg_ltu"
+msgid "UH-60 Black Hawk Heavy"
+msgstr ""
+
 msgctxt "desc/entity/ah-64_apache"
 msgid "AH-64 Apache"
 msgstr ""
@@ -2757,6 +2769,10 @@ msgid "ATF Dingo M2HB"
 msgstr ""
 
 msgctxt "desc/entity/zetros"
+msgid "Zetros"
+msgstr ""
+
+msgctxt "desc/entity/zetros_ltu"
 msgid "Zetros"
 msgstr ""
 
@@ -3596,7 +3612,15 @@ msgctxt "desc/entity/heavy_mg_mag"
 msgid "Mounted MAG"
 msgstr ""
 
+msgctxt "desc/entity/heavy_mg_mag_ltu"
+msgid "Mounted MAG"
+msgstr ""
+
 msgctxt "desc/entity/heavy_mg_mag_sandbags"
+msgid "Mounted MAG"
+msgstr ""
+
+msgctxt "desc/entity/heavy_mg_mag_sandbags_ltu"
 msgid "Mounted MAG"
 msgstr ""
 
@@ -3621,6 +3645,10 @@ msgid "ZPU 2"
 msgstr ""
 
 msgctxt "desc/entity/2b11_mortar"
+msgid "2B11 Sani"
+msgstr ""
+
+msgctxt "desc/entity/2b11_mortar_ltu"
 msgid "2B11 Sani"
 msgstr ""
 
@@ -3657,6 +3685,10 @@ msgid "BGM-71 TOW"
 msgstr ""
 
 msgctxt "desc/entity/m252_mortar_ger"
+msgid "M252"
+msgstr ""
+
+msgctxt "desc/entity/m252_mortar_ltu"
 msgid "M252"
 msgstr ""
 

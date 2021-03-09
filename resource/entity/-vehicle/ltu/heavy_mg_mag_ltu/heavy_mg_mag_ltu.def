@@ -1,0 +1,54 @@
+{actor	
+	(include "/properties/cannon_mgun.ext")
+	
+	{collider "cannon_small"}
+	{props "vision_cannon_medium" "cannon_small"}	
+	{targetclass "cannon" "bullet"}
+	
+	{extender "enumerator"}
+	
+	;volume, component/tag, thickness
+	;hint: thickness is currently defined in armor setting
+	("volume_simple" args "body"	"body"	3)
+	("volume_simple" args "body2"	"body"	3)
+	("volume_simple" args "body3"	"body"	3)
+	("volume_simple" args "body5"	"body"	3)
+	("volume_simple" args "body6"	"body"	3)
+	("volume_simple" args "body7"	"body"	3)
+
+	{Volume "body5"
+		{thickness 10}
+	}
+	{Volume "body6"
+		{thickness 10}
+	}
+	{Volume "body7"
+		{thickness 10}
+	}
+	{Volume "touch"
+		{able clear {touch}}
+	}
+
+	{Volume "bounds"
+		{able clear }
+	}
+	
+	{extender "inventory"
+		{box
+			{item "ammo 7x51" 750}
+		}
+	}
+
+	{Weaponry
+		{place "mgun"
+			{weapon "fn_mag_v1" filled}
+			("abm_mgun")
+		}
+	}
+	
+	{Extension "heavy_mg_mag.mdl"}
+
+	{bone "turret" 
+		{limits -60 60}
+	}
+}
