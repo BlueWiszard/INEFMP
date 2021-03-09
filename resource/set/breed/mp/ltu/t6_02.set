@@ -18,7 +18,6 @@
 	{inventory
 		{item "g36a2_v1" filled}
 		{item "knife_v1b" 1}
-		{item "bandage" 3}
 		{in_hands 0}
 	}
 }
