@@ -3229,7 +3229,7 @@ msgid "Molotov Cocktail"
 msgstr ""
 
 msgctxt "desc/weapon/m24sws_v1"
-msgid "M24 SWS"
+msgid "M40A5"
 msgstr ""
 
 msgctxt "desc/weapon/m27iar_v1"
